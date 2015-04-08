@@ -13,6 +13,13 @@
 		0F57C0C71AD347890079443C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F57C0C61AD347890079443C /* Images.xcassets */; };
 		0F57C0CA1AD347890079443C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F57C0C81AD347890079443C /* LaunchScreen.xib */; };
 		0F57C0D61AD347890079443C /* MoodTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57C0D51AD347890079443C /* MoodTrackTests.swift */; };
+		0F57C0E81AD3479B0079443C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57C0E71AD3479B0079443C /* InterfaceController.swift */; };
+		0F57C0EA1AD3479B0079443C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F57C0E91AD3479B0079443C /* Images.xcassets */; };
+		0F57C0EE1AD3479B0079443C /* MoodTrack WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 0F57C0ED1AD3479B0079443C /* MoodTrack WatchKit App.app */; };
+		0F57C0F61AD3479B0079443C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F57C0F41AD3479B0079443C /* Interface.storyboard */; };
+		0F57C0F81AD3479B0079443C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F57C0F71AD3479B0079443C /* Images.xcassets */; };
+		0F57C0FB1AD3479B0079443C /* MoodTrack WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0F57C0E31AD3479B0079443C /* MoodTrack WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0F57C1041AD355150079443C /* MoodDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57C1031AD355150079443C /* MoodDetailsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,35 @@
 			remoteGlobalIDString = 0F57C0B91AD347890079443C;
 			remoteInfo = MoodTrack;
 		};
+		0F57C0EF1AD3479B0079443C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F57C0B21AD347890079443C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F57C0EC1AD3479B0079443C;
+			remoteInfo = "MoodTrack WatchKit App";
+		};
+		0F57C0F91AD3479B0079443C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F57C0B21AD347890079443C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F57C0E21AD3479B0079443C;
+			remoteInfo = "MoodTrack WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F57C1021AD3479B0079443C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0F57C0FB1AD3479B0079443C /* MoodTrack WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F57C0BA1AD347890079443C /* MoodTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +71,15 @@
 		0F57C0CF1AD347890079443C /* MoodTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F57C0D41AD347890079443C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F57C0D51AD347890079443C /* MoodTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTrackTests.swift; sourceTree = "<group>"; };
+		0F57C0E31AD3479B0079443C /* MoodTrack WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MoodTrack WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F57C0E61AD3479B0079443C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F57C0E71AD3479B0079443C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0F57C0E91AD3479B0079443C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0F57C0ED1AD3479B0079443C /* MoodTrack WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoodTrack WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F57C0F31AD3479B0079443C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F57C0F51AD3479B0079443C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0F57C0F71AD3479B0079443C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0F57C1031AD355150079443C /* MoodDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodDetailsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F57C0E01AD3479B0079443C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +112,8 @@
 			children = (
 				0F57C0BC1AD347890079443C /* MoodTrack */,
 				0F57C0D21AD347890079443C /* MoodTrackTests */,
+				0F57C0E41AD3479B0079443C /* MoodTrack WatchKit Extension */,
+				0F57C0F11AD3479B0079443C /* MoodTrack WatchKit App */,
 				0F57C0BB1AD347890079443C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +123,8 @@
 			children = (
 				0F57C0BA1AD347890079443C /* MoodTrack.app */,
 				0F57C0CF1AD347890079443C /* MoodTrackTests.xctest */,
+				0F57C0E31AD3479B0079443C /* MoodTrack WatchKit Extension.appex */,
+				0F57C0ED1AD3479B0079443C /* MoodTrack WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +167,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0F57C0E41AD3479B0079443C /* MoodTrack WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0F57C0E71AD3479B0079443C /* InterfaceController.swift */,
+				0F57C1031AD355150079443C /* MoodDetailsController.swift */,
+				0F57C0E91AD3479B0079443C /* Images.xcassets */,
+				0F57C0E51AD3479B0079443C /* Supporting Files */,
+			);
+			path = "MoodTrack WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0F57C0E51AD3479B0079443C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F57C0E61AD3479B0079443C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F57C0F11AD3479B0079443C /* MoodTrack WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0F57C0F41AD3479B0079443C /* Interface.storyboard */,
+				0F57C0F71AD3479B0079443C /* Images.xcassets */,
+				0F57C0F21AD3479B0079443C /* Supporting Files */,
+			);
+			path = "MoodTrack WatchKit App";
+			sourceTree = "<group>";
+		};
+		0F57C0F21AD3479B0079443C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F57C0F31AD3479B0079443C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +214,12 @@
 				0F57C0B61AD347890079443C /* Sources */,
 				0F57C0B71AD347890079443C /* Frameworks */,
 				0F57C0B81AD347890079443C /* Resources */,
+				0F57C1021AD3479B0079443C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0F57C0FA1AD3479B0079443C /* PBXTargetDependency */,
 			);
 			name = MoodTrack;
 			productName = MoodTrack;
@@ -150,6 +244,39 @@
 			productReference = 0F57C0CF1AD347890079443C /* MoodTrackTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0F57C0E21AD3479B0079443C /* MoodTrack WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F57C0FF1AD3479B0079443C /* Build configuration list for PBXNativeTarget "MoodTrack WatchKit Extension" */;
+			buildPhases = (
+				0F57C0DF1AD3479B0079443C /* Sources */,
+				0F57C0E01AD3479B0079443C /* Frameworks */,
+				0F57C0E11AD3479B0079443C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F57C0F01AD3479B0079443C /* PBXTargetDependency */,
+			);
+			name = "MoodTrack WatchKit Extension";
+			productName = "MoodTrack WatchKit Extension";
+			productReference = 0F57C0E31AD3479B0079443C /* MoodTrack WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		0F57C0EC1AD3479B0079443C /* MoodTrack WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F57C0FC1AD3479B0079443C /* Build configuration list for PBXNativeTarget "MoodTrack WatchKit App" */;
+			buildPhases = (
+				0F57C0EB1AD3479B0079443C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MoodTrack WatchKit App";
+			productName = "MoodTrack WatchKit App";
+			productReference = 0F57C0ED1AD3479B0079443C /* MoodTrack WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +292,12 @@
 					0F57C0CE1AD347890079443C = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 0F57C0B91AD347890079443C;
+					};
+					0F57C0E21AD3479B0079443C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					0F57C0EC1AD3479B0079443C = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +316,8 @@
 			targets = (
 				0F57C0B91AD347890079443C /* MoodTrack */,
 				0F57C0CE1AD347890079443C /* MoodTrackTests */,
+				0F57C0E21AD3479B0079443C /* MoodTrack WatchKit Extension */,
+				0F57C0EC1AD3479B0079443C /* MoodTrack WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +337,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F57C0E11AD3479B0079443C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F57C0EA1AD3479B0079443C /* Images.xcassets in Resources */,
+				0F57C0EE1AD3479B0079443C /* MoodTrack WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F57C0EB1AD3479B0079443C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F57C0F61AD3479B0079443C /* Interface.storyboard in Resources */,
+				0F57C0F81AD3479B0079443C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +378,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F57C0DF1AD3479B0079443C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F57C0E81AD3479B0079443C /* InterfaceController.swift in Sources */,
+				0F57C1041AD355150079443C /* MoodDetailsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +394,16 @@
 			isa = PBXTargetDependency;
 			target = 0F57C0B91AD347890079443C /* MoodTrack */;
 			targetProxy = 0F57C0D01AD347890079443C /* PBXContainerItemProxy */;
+		};
+		0F57C0F01AD3479B0079443C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F57C0EC1AD3479B0079443C /* MoodTrack WatchKit App */;
+			targetProxy = 0F57C0EF1AD3479B0079443C /* PBXContainerItemProxy */;
+		};
+		0F57C0FA1AD3479B0079443C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F57C0E21AD3479B0079443C /* MoodTrack WatchKit Extension */;
+			targetProxy = 0F57C0F91AD3479B0079443C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +422,14 @@
 				0F57C0C91AD347890079443C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		0F57C0F41AD3479B0079443C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F57C0F51AD3479B0079443C /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MoodTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MoodTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +568,60 @@
 			};
 			name = Release;
 		};
+		0F57C0FD1AD3479B0079443C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = MoodTrack_WatchKit_Extension;
+				INFOPLIST_FILE = "MoodTrack WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		0F57C0FE1AD3479B0079443C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = MoodTrack_WatchKit_Extension;
+				INFOPLIST_FILE = "MoodTrack WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		0F57C1001AD3479B0079443C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MoodTrack WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0F57C1011AD3479B0079443C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MoodTrack WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +647,22 @@
 			buildConfigurations = (
 				0F57C0DD1AD347890079443C /* Debug */,
 				0F57C0DE1AD347890079443C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0F57C0FC1AD3479B0079443C /* Build configuration list for PBXNativeTarget "MoodTrack WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F57C0FD1AD3479B0079443C /* Debug */,
+				0F57C0FE1AD3479B0079443C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0F57C0FF1AD3479B0079443C /* Build configuration list for PBXNativeTarget "MoodTrack WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F57C1001AD3479B0079443C /* Debug */,
+				0F57C1011AD3479B0079443C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

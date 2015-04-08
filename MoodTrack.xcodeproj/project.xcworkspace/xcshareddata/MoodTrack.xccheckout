@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E5BF8D61-1189-4FBF-8500-7F9602CC717B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MoodTrack</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C11CE210B2C04F88C3B364233802587E2A38B5D6</key>
+		<string>https://github.com/AkashSajjad/MoodTrack.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MoodTrack.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C11CE210B2C04F88C3B364233802587E2A38B5D6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AkashSajjad/MoodTrack.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C11CE210B2C04F88C3B364233802587E2A38B5D6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C11CE210B2C04F88C3B364233802587E2A38B5D6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MoodTrack</string>
+		</dict>
+	</array>
+</dict>
+</plist>

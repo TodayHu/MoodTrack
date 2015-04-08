@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MoodTrack_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView alignment="center" image="range0" id="5ee-Qv-gZR"/>
+                        <separator alignment="left" id="VIg-QD-QNe"/>
+                        <label alignment="center" text="Current Mood:" id="wyB-uc-VGX"/>
+                        <slider width="1" alignment="left" maximum="4" steps="4" id="PtU-Mr-rop">
+                            <connections>
+                                <action selector="moodSliderChanged:" destination="AgC-eL-Hgc" id="lLC-h0-1nT"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" id="98P-MW-mdm">
+                            <items>
+                                <label alignment="left" text="Good" id="Sav-7k-hx2"/>
+                                <label alignment="right" text="Rage" id="55e-E7-kE2"/>
+                            </items>
+                        </group>
+                        <switch width="1" alignment="left" value="YES" title="Offer Advice" id="1bR-Y5-F7J"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Record Modd" id="mcj-KF-s4d">
+                            <connections>
+                                <segue destination="Ig8-zD-JNc" kind="push" identifier="RecordMoodSegue" id="1S1-Kx-aGV"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Help" id="F50-db-avl">
+                            <connections>
+                                <action selector="helpButtonTapped" destination="AgC-eL-Hgc" id="jKe-gO-g9Q"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="moodImage" destination="5ee-Qv-gZR" id="Oba-pC-6H6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="215" y="416.40555555555557"/>
+        </scene>
+        <!--MoodDetailsController-->
+        <scene sceneID="PHz-GJ-IpA">
+            <objects>
+                <controller identifier="MoodDetailsController" id="Ig8-zD-JNc" customClass="MoodDetailsController" customModule="MoodTrack_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="BCb-fL-WDe">
+                            <items>
+                                <imageView width="0.5" widthAdjustment="-4" alignment="left" verticalAlignment="center" image="range1" contentMode="scaleAspectFit" id="oaQ-YD-R0J"/>
+                                <separator alignment="center" id="tL3-Fe-tPj"/>
+                                <label width="0.5" widthAdjustment="-4" alignment="right" verticalAlignment="center" text="Label" id="fVR-fP-7Qo"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="u9m-G9-G14">
+                            <items>
+                                <label width="1" alignment="left" text="The quick brown fox jumps over the lazy dog." numberOfLines="0" id="Brx-9K-qKZ"/>
+                                <separator alignment="left" id="XCK-w3-QnT"/>
+                                <label width="1" alignment="left" text="Advice goes here!" numberOfLines="0" id="0yN-J9-n7E"/>
+                            </items>
+                            <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="moodAdviceLabel" destination="0yN-J9-n7E" id="cJA-v1-zCw"/>
+                        <outlet property="moodDescriptionLabel" destination="Brx-9K-qKZ" id="g4N-Hn-dQZ"/>
+                        <outlet property="moodImage" destination="oaQ-YD-R0J" id="BEF-OB-Ewh"/>
+                        <outlet property="moodNameLabel" destination="fVR-fP-7Qo" id="hsC-XH-v6w"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="444" y="416"/>
+        </scene>
+        <!--HelpController-->
+        <scene sceneID="vdZ-SO-3dN">
+            <objects>
+                <controller identifier="HelpController" id="vK6-OO-vq6">
+                    <items>
+                        <label alignment="center" text="Help" id="DE8-Wt-cSM"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="215" y="771"/>
+        </scene>
+    </scenes>
+</document>
